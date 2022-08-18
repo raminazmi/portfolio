@@ -1,0 +1,240 @@
+    .profile .main_container {
+        margin: 0 auto 40px;
+        background-color: var(--container-color);
+        border: 2px solid var(--light-color);
+    }
+    
+    .profile .personal_Info {
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    
+    .profile .personal_Info img {
+        width: 120px;
+        height: 120px;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+    }
+    
+    .profile .personal_Info h3 {
+        font-family: 'Tajawal-Regular';
+        margin: 10px 0 15px;
+    }
+    
+    .profile .personal_Info div {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .profile .view_data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+    }
+    
+    .profile .view_data ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        list-style: none;
+        margin-bottom: 8px;
+        margin-right: 10px;
+    }
+    
+    .profile i {
+        color: #717171;
+    }
+    
+    .profile .custom_button {
+        color: var(--container-color);
+        margin-left: 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        padding: 3px 15px;
+        font-size: 16px;
+    }
+    
+    .profile button i {
+        color: var(--container-color);
+    }
+    
+    .profile .nav-item i.active {
+        background: #6247f948;
+        color: var(--first-color-alt);
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        padding: 5px 15px;
+    }
+    
+    .profile .modal .box-form {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .profile .modal .box-form .right {
+        width: 100%
+    }
+    
+    .profile .modal .box-form .right h5 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .profile .modal .box-form .right h6 {
+        font-size: 16px;
+    }
+    
+    .profile .modal .box-form .edit_img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    
+    .profile .modal .box-form img {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+    }
+    
+    .profile .modal .box-form .change_img {
+        width: 120px;
+        height: 120px;
+        border-radius: 100px;
+        position: absolute;
+        background-color: #00000059;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile .modal .box-form .change_img .form-control {
+        display: none;
+        color: var(--container-color);
+        font-size: 14px;
+        font-family: 'Tajawal-Regular';
+    }
+    
+    .profile .modal .box-form .change_img label {
+        margin-top: 20px;
+        cursor: pointer;
+        color: var(--container-color);
+        font-size: 15px;
+        font-family: 'Tajawal-Regular';
+    }
+    
+    .experiences .soon .Feature {
+        text-align: center;
+        background: transparent;
+        border: 0;
+        font-size: 18px;
+        font-family: 'Tajawal-Regular';
+    }
+    
+    .head tr td {
+        padding: 0;
+    }
+    
+    .head td .view_more {
+        text-align: right;
+        padding-right: 15px;
+    }
+    
+    .review_date .modal p {
+        text-align: right;
+    }
+    
+    @media (max-width: 700px) {
+        .profile .view_data {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+        .profile .custom_button {
+            margin-left: 0;
+        }
+    }
+    
+    .reviews .review_date .settings {
+        margin-top: 20px;
+    }
+    
+    .reviews .review_date .settings>i {
+        font-size: 20px;
+        color: #04EB84;
+        background-color: #04eb8323;
+        padding: 5px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    .reviews .review_date .settings>i:hover {
+        color: #06c971;
+        background-color: #04eb8350;
+    }
+    
+    .reviews .review_date .settings>i:nth-child(1) {
+        color: #eb0436;
+        background-color: #eb043623;
+    }
+    
+    .reviews .review_date .settings>i:nth-child(1):hover {
+        background-color: #eb043650;
+    }
+    
+    .reviews .review_date .settings>i:nth-child(2) {
+        margin-left: 6px;
+    }
+    
+    .reviews_section {
+        margin-bottom: 60px;
+    }
+    
+    .main_container .row {
+        margin: 15px 0;
+        background: transparent;
+    }
+    
+    .main_container .Favorite {
+        background-color: var(--container-color);
+        border: 2px solid var(--light-color);
+    }
+    
+    .main_container .Favorite p {
+        background-color: #E9E5FE;
+        padding: 5px 15px 5px 0;
+        font-size: 20px;
+    }
+    
+    .Favorite .card_curve {
+        margin: 15px 0 0;
+    }
+    
+    .Favorite .card_curve:hover .card__description {
+        background: var(--container-color);
+    }

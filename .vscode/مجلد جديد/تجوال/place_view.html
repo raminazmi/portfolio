@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/suitcase.png" type="image/x-icon">
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--=============== FONTAWESOME ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--=============== BOOTSTRAP ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/popular events">
+    <link rel="stylesheet" href="assets/css/mainPage.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/popular landmarks">
+    <link rel="stylesheet" href="assets/css/CountryPage.css">
+    <link rel="stylesheet" href="assets/css/place_view.css">
+    <title>مكان</title>
+</head>
+
+<body>
+    <!--=========================== Header ===========================-->
+    <header class="header">
+        <div class="SearchIcon"><img src="assets/img/magnifier.png" alt="searchIcon"></div>
+        <img src="assets/img/logo-white.svg" alt="logo1" class="logo1" />
+        <img src="assets/img/logo white.svg" alt="logo2" class="logo2" />
+        <div class="navbar">
+            <div class="menu">
+                <div class="nav-header">
+                    <a class="navbar-link" href="#">
+                        <div><i class="fa-solid fa-user"></i>تسجيل الدخول</div>
+                    </a>
+                </div>
+                <div class="search">
+                    <input class="search-input" type="search" placeholder="ابحث عن وجهتك">
+                    <div class="search_icon"><img src="assets/img/magnifier.png" alt="searchIcon"></i>
+                    </div>
+                </div>
+                <ul class="navbar-list">
+                    <li>
+                        <a class="navbar-link" href="#"><img src="assets/img/home.svg"></img>الرئيسية</a>
+                    </li>
+                    <li>
+                        <a class="navbar-link" href="#"><img src="assets/img/333.svg"></img>وجهات</a>
+                    </li>
+                    <li>
+                        <a class="navbar-link" href="#"><img src="assets/img/man.svg"></img>الفعاليات</a>
+                    </li>
+                    <li>
+                        <a class="navbar-link" href="#"><img src="assets/img/election-event-on-a-calendar-with-star-symbol.svg"></img>مقالات</a>
+                    </li>
+                    <li>
+                        <a class="login_button" href="#"><img src="assets/img/newsletter.svg"></img>دخول</a>
+                    </li>
+                    <li>
+                        <button class="custom_button">
+                            <a class="" href="#">
+                            <span>تسجيل الدخول</span>
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <p class="tejwal-rights">منصة تجوال | جميع الحقوق محفوظة</p>
+        </div>
+        <button type="button" class="mobile-navbar-btn">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <div class="shadow_color" id="full_Screen" onclick=""></div>
+    </header>
+    <!--=========================== breadcrumb ===========================-->
+    <section class="breadcrumb-size">
+        <div class="main_container">
+            <nav style="--breadcrumb-divider: quote('>');" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#"><img src="assets/img/home1.svg"></a>
+                    </li>
+                    <li class="breadcrumb-item " aria-current="page">الوجهات</li>
+                    <li class="breadcrumb-item " aria-current="page">قطر</li>
+                    <li class="breadcrumb-item active" aria-current="page">تجارب لا تفوت</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!--=========================== Img-cover ===========================-->
+    <section class="Img-cover CountryPage place">
+        <div class="main_container">
+            <div class="CoverImage FlexEmbed Flex-Embed" style="background-image:url(assets/img/large-1920px\ \(29\).jpeg)">
+                <i class="ri-bookmark-line bookmark"></i>
+                <div class="content">
+                    <h2>مطعم كت</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=========================== place ===========================-->
+    <section class="main_container place">
+        <div class="place_container">
+            <div class="data">
+                <div class="first_row">
+                    <div>
+                        <div class="flex">
+                            <h4>مطاعم</h4>
+                            <h4>المطبخ التقليدي</h4>
+                        </div>
+                        <div class="">
+                            <h1>مطعم كت</h1>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="customer_reviews">
+                            <div class="starsAndExplore">
+                                <fieldset class="rating-group" dir="ltr">
+                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <label for="star5"></label>
+                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <label for="star4"></label>
+                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <label for="star3"></label>
+                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <label for="star2"></label>
+                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <label for="star1"></label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="reviews_value">
+                            <h2>5.3</h2>
+                            <h6>(256 مراجعات)</h6>
+                        </div>
+                    </div>
+                </div>
+                <p class="">يقدم هذا المطعم الأمريكي، الذي يديره الشيف العالمي الشهير فولفجانج باك، أفضل شرائح اللحم والأطباق الشهية المستوحاة من الجنوب العميق الأمريكي. </p>
+                <h5>مميزات مطعم كت</h5>
+                <div class="flex features">
+                    <div class=""><img src="assets/img/check.svg"></img>مناسب للعائلات</div>
+                    <div class=""><img src="assets/img/check.svg"></img>مناسب للمجموعات</div>
+                    <div class=""><img src="assets/img/check.svg"></img>ساحات خارجيه</div>
+                </div>
+            </div>
+            <div class="reports">
+                <div class="statistical">
+                    <button class="custom_button" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="ri-map-pin-2-fill"></i>
+                        ارشادات الوصول</button>
+                    <div class="details">
+                        <div>
+                            <h6>العنوان</h6>
+                            <h5>قطر - الدوحه - شارع 18 بجوار كابيتال مول</h5>
+                        </div>
+                        <div>
+                            <h6>الموقع الالكتروني</h6>
+                            <h5>www.tejwaltour.com</h5>
+                        </div>
+                        <div>
+                            <h6>الهاتف</h6>
+                            <h5>987 322 2463 29 +</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=========================== Reviews ===========================-->
+    <section class="main_container ">
+        <p class="section_title"><span class=""></span>التقيمات</p>
+        <table class="reviews">
+            <thead>
+                <tr>
+                    <th colspan="3">
+                        <div class="table_head">
+                            <div class="reviews_value">
+                                <h2>4.8</h2>
+                                <div class="evaluate">
+                                    <h5>ممتاز</h5>
+                                    <h6>(10 مراجعات)</h6>
+                                </div>
+                            </div>
+
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="Share">
+                            <i class="ri-share-fill"></i>
+                            <h4>شارك تجربتك</h4>
+                        </div>
+                    </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="">اضف التقييم ل <span>مطعم كت</span></p>
+                                            <div class="flex">
+                                                <img src="assets/img/manama-cityguide-580x3602x.jpg" alt="">
+                                                <div class="customer_reviews">
+                                                    <div class="starsAndExplore">
+                                                        <fieldset class="rating-group" dir="ltr">
+                                                            <input type="radio" id="star5" name="rating" value="5">
+                                                            <label for="star5"></label>
+                                                            <input type="radio" id="star4" name="rating" value="4">
+                                                            <label for="star4"></label>
+                                                            <input type="radio" id="star3" name="rating" value="3">
+                                                            <label for="star3"></label>
+                                                            <input type="radio" id="star2" name="rating" value="2">
+                                                            <label for="star2"></label>
+                                                            <input type="radio" id="star1" name="rating" value="1">
+                                                            <label for="star1"></label>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="أخبر الجميع عن تجربتك" id="floatingTextarea2" style="height: 180px; border-radius: 0;"></textarea>
+                                                <label for="floatingTextarea2">أخبر الجميع عن تجربتك</label>
+                                            </div>
+                                            <br>
+                                            <button type="button" class="custom_button">أضف تقييم</button>
+                                            <br><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="flex">
+                            <img src="assets/img/0O1A3138.jpg" alt="">
+                            <div class="user_data">
+                                <h3>جيهان سعد</h3>
+                                <h4>مصر</h4>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="customer_reviews">
+                            <div class="starsAndExplore">
+                                <fieldset class="rating-group" dir="ltr">
+                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <label for="star5"></label>
+                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <label for="star4"></label>
+                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <label for="star3"></label>
+                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <label for="star2"></label>
+                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <label for="star1"></label>
+                                </fieldset>
+                            </div>
+                            <p class="opinion"> بالحضاره العصريه هنا تجتمع بالحضاره العصريه هنا تجتمع بالحضاره العصريه هنا تجتمع الهدوء مع المتعه بالحضاره العصريه</p>
+                        </div>
+                    </td>
+                    <td class="review_date">
+                        <div>22.03.2022</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex">
+                            <img src="assets/img/0O1A3138.jpg" alt="">
+                            <div class="user_data">
+                                <h3>جيهان سعد</h3>
+                                <h4>مصر</h4>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="customer_reviews">
+                            <div class="starsAndExplore">
+                                <fieldset class="rating-group" dir="ltr">
+                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <label for="star5"></label>
+                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <label for="star4"></label>
+                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <label for="star3"></label>
+                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <label for="star2"></label>
+                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <label for="star1"></label>
+                                </fieldset>
+                            </div>
+                            <p class="opinion">هنا تجتمع الهدوء مع المتعه بالحضاره العصريه</p>
+                        </div>
+                    </td>
+                    <td class="review_date">
+                        <div>22.03.2022</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex">
+                            <img src="assets/img/0O1A3138.jpg" alt="">
+                            <div class="user_data">
+                                <h3>علاء أحمد </h3>
+                                <h4>ايطاليا</h4>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="customer_reviews">
+                            <div class="starsAndExplore">
+                                <fieldset class="rating-group" dir="ltr">
+                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <label for="star5"></label>
+                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <label for="star4"></label>
+                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <label for="star3"></label>
+                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <label for="star2"></label>
+                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <label for="star1"></label>
+                                </fieldset>
+                            </div>
+                            <p class="opinion">هنا تجتمع الهدوء مع المتعه بالحضاره العصريه</p>
+                        </div>
+                    </td>
+                    <td class="review_date">
+                        <div>22.03.2022</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex">
+                            <img src="assets/img/0O1A3138.jpg" alt="">
+                            <div class="user_data">
+                                <h3>خالد فواز</h3>
+                                <h4>تونس</h4>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="customer_reviews">
+                            <div class="starsAndExplore">
+                                <fieldset class="rating-group" dir="ltr">
+                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <label for="star5"></label>
+                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <label for="star4"></label>
+                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <label for="star3"></label>
+                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <label for="star2"></label>
+                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <label for="star1"></label>
+                                </fieldset>
+                            </div>
+                            <p class="opinion">هنا تجتمع الهدوء مع المتعه بالحضاره العصريه</p>
+                        </div>
+                    </td>
+                    <td class="review_date">
+                        <div>22.03.2022</div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        <div class="view_more">
+                            عرض المزيد
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <!--=========================== Popular landmarks ===========================-->
+    <section class="main_container landmarks custom_button_change">
+        <p class="section_title"><span class=""></span>معالم قريبة</p>
+        <div class="swiper mySwiper-landmarks">
+            <div class="arrows">
+                <i class="ri-arrow-right-s-line arrow_swipe_right"></i>
+                <i class="ri-arrow-left-s-line arrow_swipe_left"></i>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div href="" class="card_curve">
+                        <img src="assets/img/the-pearl-qatar-xlarge.webp" class="card__image" alt="" />
+                        <div class="mark">
+                            <i class="ri-bookmark-line bookmark"></i>
+                        </div>
+                        <div class="card__overlay">
+                            <div class="card__header">
+                                <div class="card__header-text">
+                                    <h3 class="card__title">شاطئ المالديف</h3>
+                                </div>
+                                <div class="location">
+                                    <h3 class=""> القاهرة - مصر</h3>
+                                </div>
+                                <div class="starsAndExplore">
+                                    <fieldset class="rating-group" dir="ltr">
+                                        <input type="radio" id="star5" name="rating" value="5">
+                                        <label for="star5"></label>
+                                        <input type="radio" id="star4" name="rating" value="4">
+                                        <label for="star4"></label>
+                                        <input type="radio" id="star3" name="rating" value="3">
+                                        <label for="star3"></label>
+                                        <input type="radio" id="star2" name="rating" value="2">
+                                        <label for="star2"></label>
+                                        <input type="radio" id="star1" name="rating" value="1">
+                                        <label for="star1"></label>
+                                    </fieldset>
+                                    <div class="explore">
+                                        <button class="custom_button">
+                                    <a class="" href="#">
+                                    <span>إكتشف الآن</span>
+                                    </a>
+                                </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card__description">يعتبر شاطئ من اهم الشواطئ في العالم وهو للقطر و الدوحه في العالم
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div href="" class="card_curve">
+                        <img src="assets/img/pexels-oleksandr-pidvalnyi-1008000.jpg" class=" card__image " alt=" " />
+                        <div class="mark ">
+                            <i class="ri-bookmark-line bookmark "></i>
+                        </div>
+                        <div class="card__overlay ">
+                            <div class="card__header ">
+                                <div class="card__header-text">
+                                    <h3 class="card__title ">شاطئ المالديف</h3>
+                                </div>
+                                <div class="location">
+                                    <h3 class=" "> جدة - السعودية</h3>
+                                </div>
+                                <div class="starsAndExplore">
+                                    <fieldset class="rating-group" dir="ltr">
+                                        <input type="radio" id="star5" name="rating" value="5">
+                                        <label for="star5"></label>
+                                        <input type="radio" id="star4" name="rating" value="4">
+                                        <label for="star4"></label>
+                                        <input type="radio" id="star3" name="rating" value="3">
+                                        <label for="star3"></label>
+                                        <input type="radio" id="star2" name="rating" value="2">
+                                        <label for="star2"></label>
+                                        <input type="radio" id="star1" name="rating" value="1">
+                                        <label for="star1"></label>
+                                    </fieldset>
+                                    <div class="explore">
+                                        <button class="custom_button">
+                                    <a class="" href="#">
+                                    <span>إكتشف الآن</span>
+                                    </a>
+                                </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card__description ">يعتبر شاطئ من اهم الشواطئ في العالم وهو للقطر و الدوحه في العالم
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide ">
+                    <div href=" " class="card_curve ">
+                        <img src="assets/img/8174f0b9-4e9d-427d-9604-2868d8bd7690_lg.jpg" class="card__image " alt=" " />
+                        <div class="mark ">
+                            <i class="ri-bookmark-line bookmark "></i>
+                        </div>
+                        <div class="card__overlay ">
+                            <div class="card__header ">
+                                <div class="card__header-text ">
+                                    <h3 class="card__title ">شاطئ المالديف</h3>
+                                </div>
+                                <div class="location ">
+                                    <h3 class=" "> مكة - السعودية</h3>
+                                </div>
+                                <div class="starsAndExplore">
+                                    <fieldset class="rating-group" dir="ltr">
+                                        <input type="radio" id="star5" name="rating" value="5">
+                                        <label for="star5"></label>
+                                        <input type="radio" id="star4" name="rating" value="4">
+                                        <label for="star4"></label>
+                                        <input type="radio" id="star3" name="rating" value="3">
+                                        <label for="star3"></label>
+                                        <input type="radio" id="star2" name="rating" value="2">
+                                        <label for="star2"></label>
+                                        <input type="radio" id="star1" name="rating" value="1">
+                                        <label for="star1"></label>
+                                    </fieldset>
+                                    <div class="explore">
+                                        <button class="custom_button">
+                                    <a class="" href="#">
+                                    <span>إكتشف الآن</span>
+                                    </a>
+                                </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card__description ">يعتبر شاطئ من اهم الشواطئ في العالم وهو للقطر و الدوحه في العالم
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide ">
+                    <div href=" " class="card_curve ">
+                        <img src="assets/img/large-1920px (20).jpeg" class="card__image " alt=" " />
+                        <div class="mark ">
+                            <i class="ri-bookmark-line bookmark "></i>
+                        </div>
+                        <div class="card__overlay ">
+                            <div class="card__header ">
+                                <div class="card__header-text ">
+                                    <h3 class="card__title ">شاطئ المالديف</h3>
+                                </div>
+                                <div class="location ">
+                                    <h3 class=" "> دبي - الإمارات</h3>
+                                </div>
+                                <div class="starsAndExplore">
+                                    <fieldset class="rating-group" dir="ltr">
+                                        <input type="radio" id="star5" name="rating" value="5">
+                                        <label for="star5"></label>
+                                        <input type="radio" id="star4" name="rating" value="4">
+                                        <label for="star4"></label>
+                                        <input type="radio" id="star3" name="rating" value="3">
+                                        <label for="star3"></label>
+                                        <input type="radio" id="star2" name="rating" value="2">
+                                        <label for="star2"></label>
+                                        <input type="radio" id="star1" name="rating" value="1">
+                                        <label for="star1"></label>
+                                    </fieldset>
+                                    <div class="explore">
+                                        <button class="custom_button">
+                                    <a class="" href="#">
+                                    <span>إكتشف الآن</span>
+                                    </a>
+                                </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card__description ">يعتبر شاطئ من اهم الشواطئ في العالم وهو للقطر و الدوحه في العالم
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide ">
+                    <div href=" " class="card_curve ">
+                        <img src="assets/img/manama-cityguide-580x3602x.jpg " class="card__image " alt=" " />
+                        <div class="mark ">
+                            <i class="ri-bookmark-line bookmark "></i>
+                        </div>
+                        <div class="card__overlay ">
+                            <div class="card__header ">
+                                <div class="card__header-text ">
+                                    <h3 class="card__title ">شاطئ المالديف</h3>
+                                </div>
+                                <div class="location ">
+                                    <h3 class=" "> البحرين</h3>
+                                </div>
+                                <div class="starsAndExplore">
+                                    <fieldset class="rating-group" dir="ltr">
+                                        <input type="radio" id="star5" name="rating" value="5">
+                                        <label for="star5"></label>
+                                        <input type="radio" id="star4" name="rating" value="4">
+                                        <label for="star4"></label>
+                                        <input type="radio" id="star3" name="rating" value="3">
+                                        <label for="star3"></label>
+                                        <input type="radio" id="star2" name="rating" value="2">
+                                        <label for="star2"></label>
+                                        <input type="radio" id="star1" name="rating" value="1">
+                                        <label for="star1"></label>
+                                    </fieldset>
+                                    <div class="explore">
+                                        <button class="custom_button">
+                                    <a class="" href="#">
+                                    <span>إكتشف الآن</span>
+                                    </a>
+                                </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card__description ">يعتبر شاطئ من اهم الشواطئ في العالم وهو للقطر و الدوحه في العالم
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=========================== Site footer ===========================-->
+    <footer class="footer ">
+        <div class="container ">
+            <div class="brand ">
+                <span><img src ="assets/img/logo footer.svg "></span>
+                <p>نحن دائما نجعل عملاءنا سعداء من خلال توفير أكبر عدد من الخيارات للمعالم السياحية</p>
+                <div class="icon ">
+                    <div class="contant ">
+                        <i class="fab fa-instagram "><a href="# "></a></i>
+                        <i class="fab fa-facebook "><a href="# "></a></i>
+                        <i class="fab fa-twitter "><a href="# "></a></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul class="large">
+                    <li class="response">
+                        <a href="#">وجهات</a>
+                    </li>
+                    <div>
+                        <li><a href="# ">الوجهة السياحية</a></li>
+                        <li><a href="# ">الفعاليات</a></li>
+                        <li><a href="# ">خطط للرحلتك</a></li>
+                        <li><a href="# ">أضف نشاطك التجاري</a></li>
+                    </div>
+                </ul>
+                <ul class="mobile">
+                    <li class="response">
+                        <a href="# " class=" accordion-item accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">خدماتنا</a>
+                        <i class="fa fa-add "></i>
+                    </li>
+                    <div id="flush-collapse1" class="accordion-body response_content accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample">
+                        <div>
+                            <li><a href="# ">الوجهة السياحية</a></li>
+                            <li><a href="# ">الفعاليات</a></li>
+                            <li><a href="# ">خطط للرحلتك</a></li>
+                            <li><a href="# ">أضف نشاطك التجاري</a></li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="internal_destinations">
+                <ul class="large">
+                    <li class="response">
+                        <a href="# ">وجهات عربية</a>
+                    </li>
+                    <div>
+                        <li><a href="# ">الإمارات</a></li>
+                        <li><a href="# ">قطر</a></li>
+                        <li><a href="# ">السعودية</a></li>
+                        <li><a href="# ">الأردن</a></li>
+                    </div>
+                </ul>
+                <ul class="mobile">
+                    <li class="response">
+                        <a href="# " class=" accordion-item accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">وجهات عربية</a>
+                        <i class="fa fa-add "></i>
+                    </li>
+                    <div id="flush-collapse2" class="accordion-body response_content accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
+                        <div>
+                            <li><a href="# ">الإمارات</a></li>
+                            <li><a href="# ">قطر</a></li>
+                            <li><a href="# ">السعودية</a></li>
+                            <li><a href="# ">الأردن</a></li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="external_destinations">
+                <ul class=" large">
+                    <li class="response">
+                        <a href="# ">وجهات أجنبية</a>
+                    </li>
+                    <div>
+                        <li><a href="# ">الولايات المتحدة</a></li>
+                        <li><a href="# ">السويد</a></li>
+                        <li><a href="# ">تركيا</a></li>
+                        <li><a href="# ">الهند</a></li>
+                    </div>
+                </ul>
+                <ul class="mobile">
+                    <li class="response">
+                        <a href="# " class="accordion-item accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">وجهات أجنبية</a>
+                        <i class="fa fa-add "></i>
+                    </li>
+                    <div id="flush-collapse3" class="accordion-body response_content accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
+                        <div>
+                            <li><a href="# ">الولايات المتحدة</a></li>
+                            <li><a href="# ">السويد</a></li>
+                            <li><a href="# ">تركيا</a></li>
+                            <li><a href="# ">الهند</a></li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--=========================== Footer ===========================-->
+    <div class="rights ">
+        <div class=" ">
+            <p class=" mb-0 py-2 "> كل الحقوق محفوظة © 2022 </p>
+        </div>
+    </div>
+    <!--=========================== Our JavaScript Section Start ===========================-->
+    <script type="module " src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js "></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+    <script src=" assets/js/index.js "></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+    <script src="assets/js/swiper-bundle.min.js "></script>
+</body>
+
+</html>
