@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Tajawal-Bold';
+    src: url(../fonts/Tajawal/Tajawal-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Tajawal-Regular';
+    src: url(../fonts/Tajawal/Tajawal-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal-Bold';
+}
+
+body {
+    background: var(--body-color);
+    box-sizing: border-box;
+}
+
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    /*
+     first-color: hsl(232, 26%, 17%)
+     second-color: hsl(49, 100%, 91%)
+     yallow:hsl(49, 100%, 91%)
+ */
+    --hue: 230;
+    --sat: 26%;
+    --lig: 17%;
+    --first-color: #1F3347;
+    --first-color-alt: hsl(249, 94%, 63%);
+    --first-color-alt2: hsl(180, 87%, 88%);
+    --gray: hsl(0, 0%, 77%);
+    --second-color: hsl(357, 96%, 72%);
+    --second-color-alt: hsl(339, 62%, 93%);
+    --second-color-alt2: hsl(43, 100%, 91%);
+    --shadow-color: hsla(var(--hue), var(--sat), var(--lig), 0.4);
+    --container-color: #fff;
+    --custom-button: hsl(248, 100%, 97%);
+    --body-color: linear-gradient(to left, #F6F4FE 50%, #FEF7F8 80%);
+    --text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    --div-shadow: 0 0 10px rgba(238, 238, 238, 0.5);
+    --light-color: #eaeaea;
+}
+
+a {
+    cursor: pointer;
+}
+
+i {
+    color: var(--first-color-alt);
+}
+
+.custom_button {
+    background-color: var(--first-color-alt);
+    border: none;
+    color: var(--container-color);
+    margin-top: 2px;
+    padding: 0px 12px;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.card_curve {
+    width: 100%
+}
+
+.custom_button a {
+    color: var(--container-color);
+}
+
+.custom_button_change .rating__icon {
+    font-size: 8px;
+}
+
+.custom_button_change .custom_button {
+    padding: 1px 15px 3px;
+    background-color: var(--custom-button);
+}
+
+.custom_button_change .custom_button a {
+    font-size: 15px;
+    color: var(--first-color);
+}
+
+.section_title {
+    position: relative;
+    margin: 0 40px 30px 15px;
+    font-size: 23px;
+    color: var(--first-color);
+    font-weight: bold;
+}
+
+.modal {
+    z-index: 99999999999;
+}
+
+.section_title span::before {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 17px;
+    width: 7px;
+    height: 40px;
+    background-color: var(--first-color-alt);
+    border: 0;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease;
+}
+
+.section_title span:hover:before {
+    --size: 200px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+}
+
+.section_title span {
+    font-family: 'Tajawal-Regular';
+    color: var(--first-color-alt);
+}
+
+.main_container {
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.accordion-header {
+    text-align: center;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: var(--first-color-alt);
+    outline: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--shadow-color);
+    border: 0;
+}
+
+.CountryPage .bookmark {
+    font-size: 28px;
+    padding: 0 7px;
+}
+
+.bookmark {
+    position: absolute;
+    bottom: 105px;
+    left: 15px;
+    font-size: 22px;
+    background-color: var(--second-color);
+    box-shadow: 0 1px 6px var(--second-color);
+    color: var(--container-color);
+    border-radius: 40px;
+    padding: 0 5px;
+    cursor: pointer;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.bookmark:hover {
+    color: var(--second-color);
+    background-color: var(--container-color);
+    border: 1.5px solid var(--second-color);
+}
+.CountryPage .bookmark:hover {
+    border:none;
+}
+.CountryPage .bookmark {
+    bottom:390px;
+    box-shadow:none;
+}
+.more-read h5 {
+    font-size: 17px;
+}
+
+.more-read {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.more-read,
+.more-read i {
+    text-decoration: none;
+    color: var(--first-color-alt);
+}
+
+.more-read i {
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 50rem) {
+    .more-read h5 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section_title {
+        font-size: 20px;
+    }
+}
