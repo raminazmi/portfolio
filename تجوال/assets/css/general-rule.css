@@ -12,12 +12,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Tajawal-Bold';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 body {
     background: var(--body-color);
-    box-sizing: border-box;
 }
 
 :root {
@@ -80,19 +80,6 @@ i {
     color: var(--container-color);
 }
 
-.custom_button_change .rating__icon {
-    font-size: 8px;
-}
-
-.custom_button_change .custom_button {
-    padding: 1px 15px 3px;
-    background-color: var(--custom-button);
-}
-
-.custom_button_change .custom_button a {
-    font-size: 15px;
-    color: var(--first-color);
-}
 
 .section_title {
     position: relative;
@@ -131,7 +118,8 @@ i {
 }
 
 .section_title span {
-    font-family: 'Tajawal-Regular';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     color: var(--first-color-alt);
 }
 
@@ -156,11 +144,6 @@ i {
     border: 0;
 }
 
-.CountryPage .bookmark {
-    font-size: 28px;
-    padding: 0 7px;
-}
-
 .bookmark {
     position: absolute;
     bottom: 105px;
@@ -183,11 +166,15 @@ i {
     background-color: var(--container-color);
     border: 1.5px solid var(--second-color);
 }
+
 .CountryPage .bookmark:hover {
     border:none;
 }
 .CountryPage .bookmark {
-    bottom:390px;
+    font-size: 22px;
+    bottom:400px;
+}
+.CountryPage .pic .bookmark {
     box-shadow:none;
 }
 .more-read h5 {

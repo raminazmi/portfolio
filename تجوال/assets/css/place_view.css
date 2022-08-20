@@ -32,6 +32,7 @@
 
 .place .reports .statistical {
     padding: 15px;
+    min-width: 300px;
     max-width: 300px;
     background: #2a0ec6b2;
     backdrop-filter: blur( 6px);
@@ -96,7 +97,8 @@
 }
 
 .place .flex div {
-    font-family: 'Tajawal-Regular';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .place .features {
@@ -109,7 +111,8 @@
     align-items: center;
     gap: 20px;
     color: #7f7f7f;
-    font-family: 'Tajawal-Regular';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .reviews .flex {
@@ -142,19 +145,22 @@
 
 .place .first_row .flex h4:nth-child(2) {
     color: #7f7f7f;
-    font-family: 'Tajawal-Regular';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .place .place_container p {
     width: 50vw;
     color: #7f7f7f;
-    font-family: 'Tajawal-Regular';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .place .reviews_value h2,
 .reviews_value h6 {
     font-size: 16px;
-    font-family: 'Tajawal-Regular';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .place .reviews_value h2 {
@@ -189,7 +195,8 @@
 .modal-body button {
     width: 100%;
     padding: 8px 0;
-    font-family: 'Tajawal-Regular';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     border-radius: 100px !important;
     -webkit-border-radius: 100px !important;
     -moz-border-radius: 100px !important;
@@ -282,6 +289,11 @@
 
 .reviews .reviews_value .evaluate h5 {
     color: var(--first-color-alt);
+    margin-left: 15px
+}
+
+.reviews .reviews_value .empty h6 {
+    margin-right: 5px
 }
 
 .reviews button {
@@ -320,7 +332,8 @@
 .reviews .opinion {
     max-width: 40vw;
     color: #626262;
-    font-family: 'Tajawal-Regular';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .reviews .user img {
@@ -428,8 +441,11 @@ tfoot td {
         text-align: right;
         color: #626262;
     }
+    .reviews .reviews_value .evaluate h5 {
+        font-size: 16px;
+    }
     .reviews .reviews_value .evaluate h6 {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -459,5 +475,100 @@ tfoot td {
     .reviews .reviews_value h2 {
         font-size: 20px;
         padding: 5px 10px;
+    }
+}
+
+
+/************* fancybox ***************/
+
+.fancybox__caption {
+    color: #fff;
+    font-size: 25px;
+}
+
+.fancybox__backdrop::after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    filter: blur(2px);
+    left: 50%;
+    top: 50%;
+    transform: scale(11);
+    opacity: 0.3;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.fancybox__container {
+    --carousel-button-bg: #ffffff;
+    --carousel-button-svg-filter: none;
+    --fancybox-bg: #000;
+    color: var(--first-color);
+}
+
+.fancybox__nav {
+    --carousel-button-svg-width: 22px;
+    --carousel-button-svg-height: 22px;
+    --carousel-button-svg-stroke-width: 2;
+}
+
+.fancybox__nav .carousel__button.is-prev {
+    left: 15px;
+}
+
+.fancybox__nav .carousel__button.is-next {
+    right: 15px;
+}
+
+.carousel__button.is-close {
+    top: 30px;
+    right: 30px;
+}
+
+.fancybox__slide {
+    padding: 0;
+}
+
+.fancybox__thumbs .carousel__slide {
+    padding: 20px 12px;
+    overflow: visible;
+}
+
+.fancybox__thumb {
+    border-radius: 6px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.26);
+}
+
+.is-nav-selected .fancybox__thumb {
+    transform: scale(1.25);
+    box-shadow: 0 0 0 2.5px var(--container-color);
+}
+
+.is-nav-selected .fancybox__thumb::after {
+    display: none;
+}
+
+.carousel .carousel__button:focus {
+    outline: none;
+    box-shadow: 1px 3px 3px #fff;
+}
+
+@media (max-width: 600px) {
+    .fancybox__nav,
+    .fancybox__container {
+        --carousel-button-width: 30px;
+        --carousel-button-height: 30px;
+        --carousel-button-svg-width: 18px;
+        --carousel-button-svg-height: 18px;
+        --carousel-button-svg-stroke-width: 3;
+    }
+    .fancybox__nav .carousel__button.is-prev {
+        left: 8px;
+    }
+    .fancybox__nav .carousel__button.is-next {
+        right: 8px;
     }
 }

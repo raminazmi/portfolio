@@ -218,7 +218,8 @@
 
 .Articales_view h5 {
     margin: 5px 25px 20px 15px;
-    font-family: 'Tajawal-Regular';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-size: 18px;
     color: var(--first-color-alt);
 }
@@ -234,7 +235,8 @@
 
 .Articales_view .section_Author .Author h4,
 .Articales_view .section_Author .Author h6 {
-    font-family: 'Tajawal-Regular';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     padding: 0 10px 10px 2px;
     margin: 0
 }
@@ -265,7 +267,8 @@
 }
 
 .section_Author span {
-    font-family: 'Tajawal-Regular';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     color: var(--first-color-alt);
 }
 
@@ -277,7 +280,8 @@
 }
 
 .Articales_view p {
-    font-family: 'Tajawal-Regular';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     font-size: 20px;
     padding: 0 50px 40px 150px;
     margin: 0;
@@ -315,7 +319,8 @@
     }
     .Articales_view h5 {
         margin: 5px 10px 20px;
-        font-family: 'Tajawal-Regular';
+        font-family: 'Cairo', sans-serif;
+        font-family: 'Tajawal', sans-serif;
         font-size: 14px;
     }
     .Articales_view h3 {

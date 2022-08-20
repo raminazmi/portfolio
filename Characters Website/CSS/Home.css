@@ -17,7 +17,7 @@
     right: 0;
     display: grid;
     place-items: start center;
-    height: 100%;
+    height: 100vh;
     width: 50px;
     background: var(--yellow);
     padding: 15px 10px;

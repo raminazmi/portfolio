@@ -22,7 +22,8 @@
 
 .Accordion .accordion-body {
     padding: 0 20px 20px;
-    font-family: 'Tajawal-Regular';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .Accordion .services .accordion-item {
@@ -520,12 +521,18 @@
     flex-direction: row-reverse;
 }
 
+.offcanvas {
+    width: 100%;
+}
+
 .event_view .Map-city .Map .map_con {
     flex-direction: row-reverse;
 }
 
 .Map .map_con p {
-    font-family: 'Tajawal-Regular';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+    color: black;
     margin-top: 15px;
 }
 
@@ -566,8 +573,7 @@
 
 @media screen and (max-width: 1300px) {
     .Map .description {
-        visibility: hidden;
-        display: none;
+        display: none !important;
     }
     .event_view .Map .description {
         display: block;

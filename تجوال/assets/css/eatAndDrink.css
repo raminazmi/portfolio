@@ -160,10 +160,9 @@
     margin: 0 auto;
 }
 
+
 .result {
     width: 30%;
-    display: flex;
-    justify-content: flex-start;
     height: auto;
     margin: 15px 10px;
     border-radius: 10px;

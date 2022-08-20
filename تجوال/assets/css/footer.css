@@ -42,7 +42,8 @@
     font-size: 20px;
     color: var(--background-color);
     text-decoration: none;
-    font-family: 'Tajawal-Regular';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
 
 .footer .contant {
@@ -63,13 +64,14 @@
     border-radius: 100px;
     font-size: 28px;
     cursor: pointer;
+    position: relative;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
 }
 
-.footer .icon i:nth-of-type(2) {
+.footer .icon a:nth-of-type(2) i {
     position: relative;
     bottom: 10px;
     font-size: 35px;
@@ -149,7 +151,7 @@
 @media screen and (max-width: 500px) {
     .brand span img {
         width: 130px;
-        height: 110px;
+        height: 90px;
     }
     .footer p {
         font-size: 17px;
